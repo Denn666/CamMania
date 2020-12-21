@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Kategori_list">
+    tools:context=".Admin_Transaksi">
 
     <ImageView
         android:id="@+id/iv_baground"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/iv_returnkategori"
+            android:id="@+id/iv_returnadmintransaksi"
             android:layout_width="45dp"
             android:layout_height="39dp"
             android:foregroundGravity="left"
@@ -42,7 +42,23 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.516" />
-
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="left"
+            android:gravity="left"
+            android:text="Transaction"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toEndOf="@+id/iv_returnadmintransaksi"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.511" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -55,7 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_movie2"
+            android:id="@+id/rv_admin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 

@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Kategori_list">
+    tools:context=".Karyawan_Pengembalian">
 
     <ImageView
         android:id="@+id/iv_baground"
@@ -31,18 +31,42 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/iv_returnkategori"
+            android:id="@+id/iv_returnpengembalian"
             android:layout_width="45dp"
             android:layout_height="39dp"
             android:foregroundGravity="left"
             android:src="@drawable/ic_return"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="left"
+            android:gravity="left"
+            android:text="Product In"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toEndOf="@+id/iv_returnpengembalian"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.516" />
+            app:layout_constraintVertical_bias="0.511" />
 
+        <ImageView
+            android:id="@+id/karyawan_add_pengembalian"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/iv_add_member"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.928"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -55,7 +79,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_movie2"
+            android:id="@+id/rv_karyawan1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 

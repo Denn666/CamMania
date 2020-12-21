@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#E5E5E5"
     android:orientation="vertical"
-    tools:context=".UserProfile">
+    tools:context=".Karyawan_EditProfile">
 
 
     <ImageView
@@ -33,7 +33,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/iv_returnprofile"
+            android:id="@+id/iv_returnkaryawanprofile"
             android:layout_width="45dp"
             android:layout_height="39dp"
             android:foregroundGravity="left"
@@ -58,7 +58,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.054"
-            app:layout_constraintStart_toEndOf="@+id/iv_returnprofile"
+            app:layout_constraintStart_toEndOf="@+id/iv_returnkaryawanprofile"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.511" />
 
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <ImageView
-            android:id="@+id/iv_dp_user"
+            android:id="@+id/iv_dp_krw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/fotoprofile"
@@ -100,7 +100,7 @@
             app:layout_constraintVertical_bias="0.631" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/btn_krw_dp"
             android:layout_width="57dp"
             android:layout_height="48dp"
             android:background="#3E64C7"
@@ -125,7 +125,7 @@
 
         <TextView
 
-            android:id="@+id/profile_username"
+            android:id="@+id/krw_profile_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Username"
@@ -142,10 +142,10 @@
 
         <EditText
 
-            android:id="@+id/profile_username_edit"
+            android:id="@+id/profile_krwusername_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bulloh"
+            android:hint="Bulloh"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="15dp"
@@ -169,7 +169,7 @@
 
         <TextView
 
-            android:id="@+id/profile_nama"
+            android:id="@+id/krw_profile_nama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Name"
@@ -186,10 +186,10 @@
 
         <EditText
 
-            android:id="@+id/profile_nama_edit"
+            android:id="@+id/profile_krwnama_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chabib Bulloh"
+            android:hint="Chabib Bulloh"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="15dp"
@@ -214,7 +214,7 @@
 
         <TextView
 
-            android:id="@+id/profile_address"
+            android:id="@+id/krw_profile_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Address"
@@ -231,10 +231,10 @@
 
         <EditText
 
-            android:id="@+id/profile_address_edit"
+            android:id="@+id/profile_krwaddress_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mbantul"
+            android:hint="Mbantul"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="15dp"
@@ -258,7 +258,7 @@
 
         <TextView
 
-            android:id="@+id/profile_notelp"
+            android:id="@+id/krw_profile_notelp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="No. Telp"
@@ -275,10 +275,10 @@
 
         <EditText
 
-            android:id="@+id/profile_notelp_edit"
+            android:id="@+id/profile_krwnotelp_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="12345678"
+            android:hint="12345678"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="15dp"
@@ -302,7 +302,7 @@
 
         <TextView
 
-            android:id="@+id/profile_email"
+            android:id="@+id/krw_profile_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Email"
@@ -319,10 +319,10 @@
 
         <EditText
 
-            android:id="@+id/profile_email_edit"
+            android:id="@+id/profile_krwemail_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bulloh@example.com"
+            android:hint="Bulloh@example.com"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="15dp"
@@ -346,7 +346,7 @@
 
         <TextView
 
-            android:id="@+id/profile_password"
+            android:id="@+id/krw_profile_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Password"
@@ -363,10 +363,10 @@
 
         <EditText
 
-            android:id="@+id/profile_password_edit"
+            android:id="@+id/profile_krwpassword_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="testestes"
+            android:hint="testestes"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="15dp"
@@ -379,7 +379,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/btn_save"
+        android:id="@+id/btn_krw_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#3E64C7"

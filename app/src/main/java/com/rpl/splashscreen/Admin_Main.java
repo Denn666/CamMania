@@ -9,8 +9,8 @@ import androidx.fragment.app.FragmentManager;
 
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
-public class MainActivity extends AppCompatActivity{
-    private static final String TAG = MainActivity.class.getSimpleName();
+public class Admin_Main extends AppCompatActivity {
+    private static final String TAG = Admin_Main.class.getSimpleName();
 
     private ChipNavigationBar btm_navigation;
     private FragmentManager fragmentManager;
@@ -18,17 +18,17 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_admin_main);
 
 
-        btm_navigation = findViewById(R.id.botnav_home);
+        btm_navigation = findViewById(R.id.botnav_admin);
 
         if(savedInstanceState==null){
-            btm_navigation.setItemSelected(R.id.home, true);
+            btm_navigation.setItemSelected(R.id.adm_home, true);
             fragmentManager = getSupportFragmentManager();
-            MainFragment mainFragment = new MainFragment();
+            Admin_HomeFragment Admin_HomeFragment = new Admin_HomeFragment();
             fragmentManager.beginTransaction()
-                    .replace(R.id.fragment_container, mainFragment)
+                    .replace(R.id.fragment_container2, Admin_HomeFragment)
                     .commit();
         }
 
@@ -37,26 +37,17 @@ public class MainActivity extends AppCompatActivity{
             public void onItemSelected(int id) {
                 Fragment fragment = null;
                 switch (id){
-                    case R.id.home:
-                        fragment = new MainFragment();
+                    case R.id.adm_home:
+                        fragment = new Admin_HomeFragment();
                         break;
-                    case R.id.favorite:
-                        fragment = new FavoriteFragment();
-                        break;
-                    case R.id.keranjang:
-                        fragment = new KeranjangFragment();
-                        break;
-                    case R.id.kategori:
-                        fragment = new KategoriFragment();
-                        break;
-                    case R.id.user:
-                        fragment = new UserFragment();
+                    case R.id.adm_user:
+                        fragment = new Admin_UserFragment();
                         break;
                 }
                 if (fragment!=null){
                     fragmentManager = getSupportFragmentManager();
                     fragmentManager.beginTransaction()
-                            .replace(R.id.fragment_container, fragment)
+                            .replace(R.id.fragment_container2, fragment)
                             .commit();
                 }else {
                     Log.e(TAG, "Error in creating fragment");

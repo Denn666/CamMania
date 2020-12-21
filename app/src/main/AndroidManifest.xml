@@ -27,7 +27,19 @@
         <activity android:name=".Kategori"></activity>
         <activity android:name=".Kategori_list"></activity>
         <activity android:name=".LihatBarang"></activity>
-
+        <activity android:name=".Admin_Main"></activity>
+        <activity android:name=".Admin_Transaksi"></activity>
+        <activity android:name=".Admin_IsiTransaksi"></activity>
+        <activity android:name=".Admin_MemberOperator"></activity>
+        <activity android:name=".Admin_UserAkun"></activity>
+        <activity android:name=".Admin_UserProfile"></activity>
+        <activity android:name=".Karyawan_Main"></activity>
+        <activity android:name=".Karyawan_ListTransaksi"></activity>
+        <activity android:name=".Karyawan_IsiTransaksi"></activity>
+        <activity android:name=".Karyawan_Member"></activity>
+        <activity android:name=".Karyawan_Pengembalian"></activity>
+        <activity android:name=".Karyawan_Profile"></activity>
+        <activity android:name=".Karyawan_EditProfile"></activity>
     </application>
 
 </manifest>

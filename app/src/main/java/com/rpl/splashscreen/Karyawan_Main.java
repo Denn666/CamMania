@@ -1,5 +1,6 @@
 package com.rpl.splashscreen;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -9,8 +10,8 @@ import androidx.fragment.app.FragmentManager;
 
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
-public class MainActivity extends AppCompatActivity{
-    private static final String TAG = MainActivity.class.getSimpleName();
+public class Karyawan_Main extends AppCompatActivity {
+    private static final String TAG = Karyawan_Main.class.getSimpleName();
 
     private ChipNavigationBar btm_navigation;
     private FragmentManager fragmentManager;
@@ -18,17 +19,17 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.karyawan_main);
 
 
-        btm_navigation = findViewById(R.id.botnav_home);
+        btm_navigation = findViewById(R.id.botnav_karyawan);
 
         if(savedInstanceState==null){
-            btm_navigation.setItemSelected(R.id.home, true);
+            btm_navigation.setItemSelected(R.id.krw_home, true);
             fragmentManager = getSupportFragmentManager();
-            MainFragment mainFragment = new MainFragment();
+            Karyawan_HomeFragment Karyawan_HomeFragment = new Karyawan_HomeFragment();
             fragmentManager.beginTransaction()
-                    .replace(R.id.fragment_container, mainFragment)
+                    .replace(R.id.fragment_container3, Karyawan_HomeFragment)
                     .commit();
         }
 
@@ -37,26 +38,17 @@ public class MainActivity extends AppCompatActivity{
             public void onItemSelected(int id) {
                 Fragment fragment = null;
                 switch (id){
-                    case R.id.home:
-                        fragment = new MainFragment();
+                    case R.id.krw_home:
+                        fragment = new Karyawan_HomeFragment();
                         break;
-                    case R.id.favorite:
-                        fragment = new FavoriteFragment();
-                        break;
-                    case R.id.keranjang:
-                        fragment = new KeranjangFragment();
-                        break;
-                    case R.id.kategori:
-                        fragment = new KategoriFragment();
-                        break;
-                    case R.id.user:
-                        fragment = new UserFragment();
+                    case R.id.krw_user:
+                        fragment = new Karyawan_ProfileFragment();
                         break;
                 }
                 if (fragment!=null){
                     fragmentManager = getSupportFragmentManager();
                     fragmentManager.beginTransaction()
-                            .replace(R.id.fragment_container, fragment)
+                            .replace(R.id.fragment_container3, fragment)
                             .commit();
                 }else {
                     Log.e(TAG, "Error in creating fragment");

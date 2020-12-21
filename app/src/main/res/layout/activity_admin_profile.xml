@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#E5E5E5"
     android:orientation="vertical"
-    tools:context=".UserProfile">
+    tools:context=".Admin_UserProfile">
 
 
     <ImageView
@@ -33,7 +33,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/iv_returnprofile"
+            android:id="@+id/iv_returnadminprofile"
             android:layout_width="45dp"
             android:layout_height="39dp"
             android:foregroundGravity="left"
@@ -58,7 +58,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.054"
-            app:layout_constraintStart_toEndOf="@+id/iv_returnprofile"
+            app:layout_constraintStart_toEndOf="@+id/iv_returnadminprofile"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.511" />
 
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <ImageView
-            android:id="@+id/iv_dp_user"
+            android:id="@+id/iv_dp_admin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/fotoprofile"
@@ -100,7 +100,7 @@
             app:layout_constraintVertical_bias="0.631" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/btn_adm_dp"
             android:layout_width="57dp"
             android:layout_height="48dp"
             android:background="#3E64C7"
@@ -142,7 +142,7 @@
 
         <EditText
 
-            android:id="@+id/profile_username_edit"
+            android:id="@+id/profile_adminusername_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bulloh"
@@ -186,7 +186,7 @@
 
         <EditText
 
-            android:id="@+id/profile_nama_edit"
+            android:id="@+id/profile_adminnama_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Chabib Bulloh"
@@ -231,7 +231,7 @@
 
         <EditText
 
-            android:id="@+id/profile_address_edit"
+            android:id="@+id/profile_adminaddress_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mbantul"
@@ -275,7 +275,7 @@
 
         <EditText
 
-            android:id="@+id/profile_notelp_edit"
+            android:id="@+id/profile_adminnotelp_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="12345678"
@@ -319,7 +319,7 @@
 
         <EditText
 
-            android:id="@+id/profile_email_edit"
+            android:id="@+id/profile_adminemail_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bulloh@example.com"
@@ -363,7 +363,7 @@
 
         <EditText
 
-            android:id="@+id/profile_password_edit"
+            android:id="@+id/profile_adminpassword_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="testestes"
@@ -379,7 +379,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/btn_save"
+        android:id="@+id/btn_adm_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#3E64C7"

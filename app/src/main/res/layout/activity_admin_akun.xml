@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:background="#E5E5E5"
     android:orientation="vertical"
-    tools:context=".UserProfile">
-
+    tools:context=".Admin_UserAkun">
 
     <ImageView
         android:id="@+id/iv_lihatbarang"
@@ -17,10 +16,9 @@
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -33,11 +31,11 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/iv_returnprofile"
+            android:id="@+id/iv_akun"
             android:layout_width="45dp"
             android:layout_height="39dp"
             android:foregroundGravity="left"
-            android:src="@drawable/ic_return"
+            android:src="@drawable/ic_user_atas"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -51,14 +49,14 @@
             android:layout_height="wrap_content"
             android:foregroundGravity="left"
             android:gravity="left"
-            android:text="Profile"
+            android:text="Account"
             android:textAllCaps="false"
             android:textColor="#fff"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.054"
-            app:layout_constraintStart_toEndOf="@+id/iv_returnprofile"
+            app:layout_constraintStart_toEndOf="@+id/iv_akun"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.511" />
 
@@ -75,234 +73,89 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <ImageView
-            android:id="@+id/iv_dp_user"
+            android:id="@+id/iv_dp_admin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/fotoprofile"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Edit Photo"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="12dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.932"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton"
-            app:layout_constraintVertical_bias="0.631" />
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="57dp"
-            android:layout_height="48dp"
-            android:background="#3E64C7"
-            android:src="@drawable/ic_dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.934"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.901" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout5"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:background="@drawable/form_card"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
 
-        <TextView
-
-            android:id="@+id/profile_username"
+        <ImageView
+            android:id="@+id/iv_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/username"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:text="Username"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="10dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tv_adm_username"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.043"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.033"
+            app:layout_constraintStart_toEndOf="@+id/iv_username"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.347" />
+            app:layout_constraintVertical_bias="0.0" />
 
-        <EditText
-
-            android:id="@+id/profile_username_edit"
+        <TextView
+            android:id="@+id/tv_adm_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bulloh"
+            android:layout_marginBottom="12dp"
+            android:text="Admin"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.943"
-            app:layout_constraintStart_toEndOf="@+id/profile_username"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintHorizontal_bias="0.035"
+            app:layout_constraintStart_toEndOf="@+id/iv_username" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout30"
+        android:id="@+id/constraintLayout6"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:background="@drawable/form_card"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
 
-        <TextView
-
-            android:id="@+id/profile_nama"
+        <ImageView
+            android:id="@+id/iv_envelope"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="10dp"
-            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/envelope"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.043"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.347" />
-
-        <EditText
-
-            android:id="@+id/profile_nama_edit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Chabib Bulloh"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.937"
-            app:layout_constraintStart_toEndOf="@+id/profile_nama"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.45" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout31"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/form_card"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout30">
-
-        <TextView
-
-            android:id="@+id/profile_address"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Address"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="10dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.043"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.347" />
-
-        <EditText
-
-            android:id="@+id/profile_address_edit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mbantul"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.943"
-            app:layout_constraintStart_toEndOf="@+id/profile_address"
             app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout32"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/form_card"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout31">
 
         <TextView
-
-            android:id="@+id/profile_notelp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No. Telp"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="10dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.043"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.347" />
-
-        <EditText
-
-            android:id="@+id/profile_notelp_edit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="12345678"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.943"
-            app:layout_constraintStart_toEndOf="@+id/profile_notelp"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout33"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/form_card"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout32">
-
-        <TextView
-
-            android:id="@+id/profile_email"
+            android:id="@+id/tv_title_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Email"
@@ -310,85 +163,159 @@
             android:textColor="@color/black"
             android:textSize="10dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tv_adm_email"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.043"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.033"
+            app:layout_constraintStart_toEndOf="@+id/iv_envelope"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.347" />
+            app:layout_constraintVertical_bias="0.705" />
 
-        <EditText
-
-            android:id="@+id/profile_email_edit"
+        <TextView
+            android:id="@+id/tv_adm_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bulloh@example.com"
+            android:layout_marginBottom="16dp"
+            android:text="Admin@example.com"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.943"
-            app:layout_constraintStart_toEndOf="@+id/profile_email"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintStart_toEndOf="@+id/iv_envelope" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout34"
+        android:id="@+id/constraintLayout7"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:background="@drawable/form_card"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout33">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
 
-        <TextView
-
-            android:id="@+id/profile_password"
+        <ImageView
+            android:id="@+id/iv_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Password"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/padlock"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="password"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="10dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tv_adm_password"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.043"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.039"
+            app:layout_constraintStart_toEndOf="@+id/iv_password"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.347" />
+            app:layout_constraintVertical_bias="0.764" />
 
-        <EditText
-
-            android:id="@+id/profile_password_edit"
+        <TextView
+            android:id="@+id/tv_adm_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="testestes"
+            android:layout_marginBottom="16dp"
+            android:text="**********"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.943"
-            app:layout_constraintStart_toEndOf="@+id/profile_password"
+            app:layout_constraintHorizontal_bias="0.042"
+            app:layout_constraintStart_toEndOf="@+id/iv_password" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/form_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+
+        <ImageView
+            android:id="@+id/iv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/star"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_version"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.038"
+            app:layout_constraintStart_toEndOf="@+id/iv_version"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.764" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="V.0.2"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.038"
+            app:layout_constraintStart_toEndOf="@+id/iv_version" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/btn_save"
+        android:id="@+id/btn_adm_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#3E64C7"
         android:gravity="center"
-        android:text="Save"
+        android:text="Profile"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout34" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+    <Button
+        android:id="@+id/btn_adm_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3E64C7"
+        android:gravity="center"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_adm_profile" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
