@@ -1,6 +1,5 @@
 package com.rpl.splashscreen;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +13,7 @@ public class Admin_IsiTransaksi extends AppCompatActivity implements View.OnClic
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_isi_transaksi);
+        setContentView(R.layout.admin_isi_transaksi);
         returnAdminHome = returnAdminHome = findViewById(R.id.iv_returnadminisitransaksi);
         returnAdminHome.setOnClickListener(this);
 

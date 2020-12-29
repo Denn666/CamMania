@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:background="#E5E5E5"
     android:orientation="vertical"
-    tools:context=".LihatBarang">
+    tools:context=".User_LihatBarang">
 
     <ImageView
-        android:id="@+id/iv_lihatbarang"
+        android:id="@+id/iv_bglihatbarang"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#EDEDED"
@@ -46,34 +46,27 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout4"
+
+    <ImageView
+        android:layout_marginTop="3dp"
+        android:id="@+id/iv_lihat1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:src="@drawable/img_lihat_barang"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
-
-        <ImageView
-            android:id="@+id/iv_lihat1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/img_lihat_barang"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:background="@drawable/form_card"
+        android:layout_marginTop="3dp"
         android:id="@+id/constraintLayout5"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+        app:layout_constraintTop_toBottomOf="@+id/iv_lihat1">
 
         <TextView
             android:id="@+id/tv_nmBarang"
@@ -109,6 +102,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="3dp"
         android:id="@+id/constraintLayout6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -150,6 +144,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="3dp"
         android:id="@+id/constraintLayout7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -194,10 +189,14 @@
         android:id="@+id/constraintLayout8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
         android:background="@drawable/form_card"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout9"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
 
@@ -232,6 +231,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi"
             app:layout_constraintVertical_bias="0.059" />
+
+        <TextView
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- lorem ipsum"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.048"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi_lanjutan"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -21,7 +21,7 @@ public class Admin_MemberOperatorAdapter extends RecyclerView.Adapter<Admin_Memb
     @NonNull
     @Override
     public Admin_MemberOperatorAdapter.ListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_admin_row1,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_admin_members,parent,false);
         return new ListViewHolder(view);
     }
 

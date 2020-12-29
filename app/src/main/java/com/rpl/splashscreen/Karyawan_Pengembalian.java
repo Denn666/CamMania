@@ -13,9 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class Karyawan_Pengembalian extends AppCompatActivity implements View.OnClickListener {
-    private String[] movie = {"Bad Boys for Life", "The Old Guard", "Raised by Wolves", "Elite", "The Walking Dead: World Beyond", "Artemis Fowl", "Black Box", "Riverdale", "Law & Order: Special Victims Unit", "Scary Movie 5", "Star Trek: Discovery", "Hubie Halloween", "District 9", "The Hurricane Heist", "Paddington 2", "Pride & Prejudice "};
-    private String[] movieYear = {"Category", "Category", "Category", "Category", "Category", "Category", "Category", "Category", "Category", "Category", "Category", "Category", "Category", "Category", "Category", "Category"};
-    private String[] price = {"20001", "20002", "20003", "20004", "20005", "20006", "20007", "20008", "20009", "20010", "2011", "2012", "2013", "2014", "2015", "2016"};
+    private String[] movie = {"Nama Barang 1","Nama Barang 2","Nama Barang 3","Nama Barang 4","Nama Barang 5"};
+    private String[] movieYear = {"Category","Category","Category","Category","Category"};
+    private String[] price = {"17 Nov 2020","17 Nov 2020","17 Nov 2020","17 Nov 2020","17 Nov 2020"};
     private ArrayList<Movie> listMovie;
     private RecyclerView rv_karyawan1;
     private ImageView returnpengembalian;
@@ -54,7 +54,7 @@ public class Karyawan_Pengembalian extends AppCompatActivity implements View.OnC
             startActivity(balik_krwHome);
         }
         if (v.getId() == R.id.karyawan_add_pengembalian) {
-            Intent masuk_KrwIsiBarang = new Intent(Karyawan_Pengembalian.this, Karyawan_IsiTransaksi.class);
+            Intent masuk_KrwIsiBarang = new Intent(Karyawan_Pengembalian.this, Karyawan_IsiPengembalian.class);
             startActivity(masuk_KrwIsiBarang);
         }
     }

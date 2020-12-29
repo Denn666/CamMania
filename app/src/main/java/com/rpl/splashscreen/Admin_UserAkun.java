@@ -1,6 +1,5 @@
 package com.rpl.splashscreen;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -15,7 +14,7 @@ public class Admin_UserAkun extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_akun);
+        setContentView(R.layout.admin_akun);
         btn_admprofile = findViewById(R.id.btn_adm_profile);
         btn_admprofile.setOnClickListener(this);
 

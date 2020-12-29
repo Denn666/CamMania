@@ -15,6 +15,7 @@ public class Karyawan_HomeFragment extends Fragment implements View.OnClickListe
     private ImageView Transaksi;
     private ImageView IsiTransaksi;
     private ImageView MemberOperator;
+    private ImageView ProdukStok;
 
     @Nullable
     @Override
@@ -27,6 +28,8 @@ public class Karyawan_HomeFragment extends Fragment implements View.OnClickListe
         IsiTransaksi.setOnClickListener(this);
         MemberOperator = view.findViewById(R.id.krw_members);
         MemberOperator.setOnClickListener(this);
+        ProdukStok = view.findViewById(R.id.krw_product_stock);
+        ProdukStok.setOnClickListener(this);
         return view;
     }
     @Override
@@ -34,6 +37,10 @@ public class Karyawan_HomeFragment extends Fragment implements View.OnClickListe
         if (v.getId() == R.id.krw_transaction) {
             Intent masuk_krw_transaksi = new Intent(getView().getContext(), Karyawan_ListTransaksi.class);
             startActivity(masuk_krw_transaksi);
+        }
+        if (v.getId() == R.id.krw_product_stock) {
+            Intent masuk_krw_produkstok = new Intent(getView().getContext(), Karyawan_stockProduk.class);
+            startActivity(masuk_krw_produkstok);
         }
         if (v.getId() == R.id.krw_product_in) {
             Intent masuk_krw_productIn = new Intent(getView().getContext(), Karyawan_Pengembalian.class);

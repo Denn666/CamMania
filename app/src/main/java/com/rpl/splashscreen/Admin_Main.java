@@ -18,7 +18,7 @@ public class Admin_Main extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_main);
+        setContentView(R.layout.admin_main);
 
 
         btm_navigation = findViewById(R.id.botnav_admin);

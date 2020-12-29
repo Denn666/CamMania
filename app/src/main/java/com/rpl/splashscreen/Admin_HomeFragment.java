@@ -20,7 +20,7 @@ public class Admin_HomeFragment extends Fragment implements View.OnClickListener
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.activity_admin_home, container, false);
+        View view = inflater.inflate(R.layout.admin_home, container, false);
         Transaksi = view.findViewById(R.id.iv_transaction);
         Transaksi.setOnClickListener(this);
         IsiTransaksi = view.findViewById(R.id.iv_product_in);

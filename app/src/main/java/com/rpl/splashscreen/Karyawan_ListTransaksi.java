@@ -13,12 +13,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class Karyawan_ListTransaksi extends AppCompatActivity implements View.OnClickListener {
-    private String[] movie = {"Bad Boys for Life","The Old Guard","Raised by Wolves","Elite","The Walking Dead: World Beyond","Artemis Fowl","Black Box","Riverdale","Law & Order: Special Victims Unit","Scary Movie 5","Star Trek: Discovery","Hubie Halloween","District 9","The Hurricane Heist","Paddington 2","Pride & Prejudice "};
-    private String[] movieYear = {"Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category"};
-    private String[] price = {"20001","20002","20003","20004","20005","20006","20007","20008","20009","20010","2011","2012","2013","2014","2015","2016"};
+    private String[] movie = {"Nama Barang 1","Nama Barang 2","Nama Barang 3","Nama Barang 4","Nama Barang 5"};
+    private String[] movieYear = {"Category","Category","Category","Category","Category"};
+    private String[] price = {"17 Nov 2020","17 Nov 2020","17 Nov 2020","17 Nov 2020","17 Nov 2020"};
     private ArrayList<Movie> listMovie;
     private RecyclerView rv_karyawan;
     private ImageView iv_returntransaksi;
+    private ImageView addTransaksi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +28,12 @@ public class Karyawan_ListTransaksi extends AppCompatActivity implements View.On
 
         iv_returntransaksi = findViewById(R.id.iv_returntransaksi);
         iv_returntransaksi.setOnClickListener(this);
+        addTransaksi = findViewById(R.id.karyawan_add_transaksi);
+        addTransaksi.setOnClickListener(this);
 
         listMovie = new ArrayList<>();
         for (int i = 0; i < movie.length ; i++) {
-            Movie mov = new Movie(movie[i],movieYear[i],"Rp. "+price[i],0);
+            Movie mov = new Movie(movie[i],movieYear[i],price[i],0);
             listMovie.add(mov);
 
         }
@@ -45,7 +48,7 @@ public class Karyawan_ListTransaksi extends AppCompatActivity implements View.On
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.iv_returnisitransaksi) {
+        if (v.getId() == R.id.iv_returntransaksi) {
             Intent balik_krwHome = new Intent(Karyawan_ListTransaksi.this, Karyawan_Main.class);
             startActivity(balik_krwHome);
         }

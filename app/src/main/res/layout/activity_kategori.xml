@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Kategori">
+    tools:context=".User_Kategori">
 
     <ImageView
         android:id="@+id/iv_baground"
@@ -96,7 +96,7 @@
             android:layout_width="190dp"
             android:layout_height="150dp"
             android:background="@drawable/form_kategori"
-            android:src="@drawable/icon_camera"
+            android:src="@drawable/icon_lighting"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/pembatas" />
@@ -106,7 +106,7 @@
             android:layout_width="190dp"
             android:layout_height="150dp"
             android:background="@drawable/form_kategori"
-            android:src="@drawable/icon_camera"
+            android:src="@drawable/icon_lighting"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/pembatas"
             app:layout_constraintStart_toStartOf="parent" />
@@ -116,7 +116,7 @@
             android:layout_width="190dp"
             android:layout_height="150dp"
             android:background="@drawable/form_kategori"
-            android:src="@drawable/icon_camera"
+            android:src="@drawable/icon_lensa"
             app:layout_constraintBottom_toTopOf="@+id/imageView5"
             app:layout_constraintEnd_toStartOf="@+id/pembatas"
             app:layout_constraintStart_toStartOf="parent"
@@ -127,7 +127,7 @@
             android:layout_width="190dp"
             android:layout_height="150dp"
             android:background="@drawable/form_kategori"
-            android:src="@drawable/icon_camera"
+            android:src="@drawable/icon_flash"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/pembatas"
             app:layout_constraintTop_toTopOf="parent" />
@@ -137,7 +137,7 @@
             android:layout_width="190dp"
             android:layout_height="150dp"
             android:background="@drawable/form_kategori"
-            android:src="@drawable/icon_camera"
+            android:src="@drawable/icon_tripod"
             app:layout_constraintBottom_toTopOf="@+id/imageView3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/pembatas"

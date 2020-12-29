@@ -22,7 +22,7 @@ public class UserProfile extends AppCompatActivity implements View.OnClickListen
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.iv_returnprofile) {
-            Intent balik_akun = new Intent(UserProfile.this, UserAkun.class);
+            Intent balik_akun = new Intent(UserProfile.this, User_MainActivity.class);
             startActivity(balik_akun);
         }
     }

@@ -21,7 +21,7 @@ public class Admin_TransaksiAdapter extends RecyclerView.Adapter<Admin_Transaksi
     @NonNull
     @Override
     public Admin_TransaksiAdapter.ListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_admin_row,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_admin_transaction,parent,false);
         return new ListViewHolder(view);
     }
 

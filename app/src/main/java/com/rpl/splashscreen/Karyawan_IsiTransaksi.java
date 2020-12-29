@@ -9,14 +9,14 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Karyawan_IsiTransaksi extends AppCompatActivity implements View.OnClickListener {
-    private ImageView returnKaryawanHome;
+    private ImageView returnKaryawanList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.karyawan_isi_transaksi);
-        returnKaryawanHome = findViewById(R.id.iv_returnisitransaksi);
-        returnKaryawanHome.setOnClickListener(this);
+        returnKaryawanList = findViewById(R.id.iv_returnisitransaksi);
+        returnKaryawanList.setOnClickListener(this);
 
 
 
@@ -25,8 +25,8 @@ public class Karyawan_IsiTransaksi extends AppCompatActivity implements View.OnC
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.iv_returnisitransaksi) {
-            Intent balik_krwHome = new Intent(Karyawan_IsiTransaksi.this, Karyawan_Main.class);
-            startActivity(balik_krwHome);
+            Intent balik_krwlist= new Intent(Karyawan_IsiTransaksi.this, Karyawan_ListTransaksi.class);
+            startActivity(balik_krwlist);
         }
     }
 }

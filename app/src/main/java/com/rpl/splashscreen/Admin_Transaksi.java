@@ -1,6 +1,5 @@
 package com.rpl.splashscreen;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,9 +12,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class Admin_Transaksi extends AppCompatActivity implements View.OnClickListener {
-    private String[] movie = {"Bad Boys for Life","The Old Guard","Raised by Wolves","Elite","The Walking Dead: World Beyond","Artemis Fowl","Black Box","Riverdale","Law & Order: Special Victims Unit","Scary Movie 5","Star Trek: Discovery","Hubie Halloween","District 9","The Hurricane Heist","Paddington 2","Pride & Prejudice "};
-    private String[] movieYear = {"Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category"};
-    private String[] price = {"20001","20002","20003","20004","20005","20006","20007","20008","20009","20010","2011","2012","2013","2014","2015","2016"};
+    private String[] movie = {"Nama Barang 1","Nama Barang 2","Nama Barang 3","Nama Barang 4","Nama Barang 5"};
+    private String[] movieYear = {"Category","Category","Category","Category","Category"};
+    private String[] price = {"17 Nov 2020","17 Nov 2020","17 Nov 2020","17 Nov 2020","17 Nov 2020"};
     private ArrayList<Movie> listMovie;
     private RecyclerView rv_admin;
     private ImageView iv_returnadmintransaksi;
@@ -23,14 +22,14 @@ public class Admin_Transaksi extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_transaksi);
+        setContentView(R.layout.admin_transaksi);
 
         iv_returnadmintransaksi = findViewById(R.id.iv_returnadmintransaksi);
         iv_returnadmintransaksi.setOnClickListener(this);
 
         listMovie = new ArrayList<>();
         for (int i = 0; i < movie.length ; i++) {
-            Movie mov = new Movie(movie[i],movieYear[i],"Rp. "+price[i],0);
+            Movie mov = new Movie(movie[i],movieYear[i],price[i],0);
             listMovie.add(mov);
 
         }

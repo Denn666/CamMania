@@ -73,6 +73,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <ImageView
+            android:layout_marginTop="3dp"
             android:id="@+id/iv_dp_user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -84,6 +85,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="3dp"
         android:id="@+id/constraintLayout5"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -136,6 +138,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="3dp"
         android:id="@+id/constraintLayout6"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -187,6 +190,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="3dp"
         android:id="@+id/constraintLayout7"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -240,6 +244,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="3dp"
         android:id="@+id/constraintLayout8"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -292,6 +297,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
+        android:layout_marginTop="3dp"
         android:id="@+id/btn_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

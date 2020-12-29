@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#E5E5E5"
     android:orientation="vertical"
-    tools:context=".Admin_UserAkun">
+    tools:context=".Karyawan_Profile">
 
     <ImageView
         android:id="@+id/iv_lihatbarang"
@@ -73,6 +73,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLt">
 
         <ImageView
+            android:layout_marginTop="3dp"
             android:id="@+id/iv_dp_karyawan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -84,6 +85,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="3dp"
         android:id="@+id/constraintL5"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -124,7 +126,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            android:text="Admin"
+            android:text="Cashier"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="15dp"
@@ -136,6 +138,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="3dp"
         android:id="@+id/constraintL6"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -175,7 +178,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Admin@example.com"
+            android:text="karyawan@example.com"
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="15dp"
@@ -187,6 +190,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="3dp"
         android:id="@+id/constraintL7"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -240,6 +244,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="3dp"
         android:id="@+id/constraintL8"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -292,6 +297,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
+        android:layout_marginTop="3dp"
         android:id="@+id/btn_krw_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

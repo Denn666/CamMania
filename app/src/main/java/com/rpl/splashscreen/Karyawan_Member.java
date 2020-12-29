@@ -13,9 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class Karyawan_Member extends AppCompatActivity implements View.OnClickListener {
-    private String[] movie = {"Bad Boys for Life","The Old Guard","Raised by Wolves","Elite","The Walking Dead: World Beyond","Artemis Fowl","Black Box","Riverdale","Law & Order: Special Victims Unit","Scary Movie 5","Star Trek: Discovery","Hubie Halloween","District 9","The Hurricane Heist","Paddington 2","Pride & Prejudice "};
-    private String[] movieYear = {"Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category","Category"};
-    private String[] price = {"20001","20002","20003","20004","20005","20006","20007","20008","20009","20010","2011","2012","2013","2014","2015","2016"};
+    private String[] movie = {"Bulloh","Chabib","Gendhot","Hamdan","Adine"};
+    private String[] movieYear = {"Category","Category","Category","Category","Category"};
+    private String[] price = {"Members","Members","Members","Members","Members"};
 
     private ArrayList<Movie> listMovie;
     private RecyclerView rv_admin2;
@@ -31,7 +31,7 @@ public class Karyawan_Member extends AppCompatActivity implements View.OnClickLi
 
         listMovie = new ArrayList<>();
         for (int i = 0; i < movie.length ; i++) {
-            Movie mov = new Movie(movie[i],movieYear[0],"Rp. "+price[i],0);
+            Movie mov = new Movie(movie[i],movieYear[0],price[i],0);
             listMovie.add(mov);
 
         }

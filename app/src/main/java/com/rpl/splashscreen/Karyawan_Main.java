@@ -41,6 +41,7 @@ public class Karyawan_Main extends AppCompatActivity {
                     case R.id.krw_home:
                         fragment = new Karyawan_HomeFragment();
                         break;
+
                     case R.id.krw_user:
                         fragment = new Karyawan_ProfileFragment();
                         break;

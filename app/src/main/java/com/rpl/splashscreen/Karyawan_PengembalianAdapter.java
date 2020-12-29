@@ -21,7 +21,7 @@ public class Karyawan_PengembalianAdapter extends RecyclerView.Adapter<Karyawan_
     @NonNull
     @Override
     public Karyawan_PengembalianAdapter.ListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_karyawan_row1,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_karyawan_pengembalian,parent,false);
         return new Karyawan_PengembalianAdapter.ListViewHolder(view);
     }
 
