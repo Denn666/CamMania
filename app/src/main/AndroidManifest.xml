@@ -45,6 +45,9 @@
         <activity android:name=".Karyawan_IsiPengembalian"></activity>
         <activity android:name=".Karyawan_stockProduk"></activity>
         <activity android:name=".Karyawan_StockaddBarang"></activity>
+        <activity android:name=".Karyawan_StockeditBarang"></activity>
+        <activity android:name=".Karyawan_EdditBarang"></activity>
+
 
     </application>
 

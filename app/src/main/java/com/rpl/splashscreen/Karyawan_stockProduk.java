@@ -52,7 +52,7 @@ public class Karyawan_stockProduk extends AppCompatActivity implements View.OnCl
         rv_produkstok.setHasFixedSize(true);
 
         rv_produkstok.setLayoutManager(new LinearLayoutManager(this));
-        Karyawan_stockProdukAdapter movieAdapter = new Karyawan_stockProdukAdapter(listMovie);
+        Karyawan_stockProdukAdapter movieAdapter = new Karyawan_stockProdukAdapter(this,listMovie);
         rv_produkstok.setAdapter(movieAdapter);
     }
 

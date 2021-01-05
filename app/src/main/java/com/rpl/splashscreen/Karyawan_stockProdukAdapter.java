@@ -16,13 +16,13 @@ import java.util.ArrayList;
 
 public class Karyawan_stockProdukAdapter extends RecyclerView.Adapter<Karyawan_stockProdukAdapter.ListViewHolder> {
 
-
+    private Context mContext;
     private ArrayList<Movie> listMovie;
 
-    public Karyawan_stockProdukAdapter(ArrayList<Movie> listMovie) {
+    public Karyawan_stockProdukAdapter(Context mContext,ArrayList<Movie> listMovie) {
 
         this.listMovie = listMovie;
-
+        this.mContext = mContext;
     }
 
     @NonNull
@@ -52,6 +52,7 @@ public class Karyawan_stockProdukAdapter extends RecyclerView.Adapter<Karyawan_s
         TextView txtTitle;
         TextView txtYear;
         TextView txtPrice;
+        Button btn_edit;
 
 
         public ListViewHolder(@NonNull View itemView) {
@@ -61,6 +62,21 @@ public class Karyawan_stockProdukAdapter extends RecyclerView.Adapter<Karyawan_s
             txtTitle = itemView.findViewById(R.id.txtTitle);
             txtYear = itemView.findViewById(R.id.txtYear);
             txtPrice = itemView.findViewById(R.id.txtPrice);
+            btn_edit = itemView.findViewById(R.id.btn_editBarang);
+
+            btn_edit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    btn_edit.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent masuk_editbarang = new Intent(mContext.getApplicationContext(), Karyawan_StockeditBarang.class);
+                            mContext.startActivity(masuk_editbarang);
+                        }
+                    });
+
+                }
+            });
 
 
         }
